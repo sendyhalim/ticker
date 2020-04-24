@@ -1,0 +1,15 @@
+[package]
+name = "ticker"
+version = "0.1.0"
+authors = ["Sendy Halim <sendyhalim93@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2.18", features = ["full"] }
+tokio-tungstenite = { version = "0.10", features = ["tls"] }
+futures-util = "0.3"
+url = "2.1"
+futures = "0.3"
+serde_json = { version = "1.0" }
