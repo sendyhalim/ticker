@@ -1,6 +1,6 @@
 [package]
 name = "ticker"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Sendy Halim <sendyhalim93@gmail.com>"]
 edition = "2018"
 
@@ -14,5 +14,4 @@ url = "2.1"
 futures = "0.3"
 serde_json = { version = "1.0" }
 serde = { version = "1.0", features = ["derive"] }
-termion = "1.5.5"
 crossterm = { version = "0.17", features = ["event-stream"] }
