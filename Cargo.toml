@@ -1,5 +1,5 @@
 [package]
-name = "ticker"
+name = "tiqer"
 version = "0.0.1"
 authors = ["Sendy Halim <sendyhalim93@gmail.com>"]
 edition = "2018"
@@ -25,5 +25,5 @@ name = "lib"
 path = "src/lib/lib.rs"
 
 [[bin]]
-name = "ticker"
-path = "src/bin/ticker.rs"
+name = "tiqer"
+path = "src/bin/tiqer.rs"
