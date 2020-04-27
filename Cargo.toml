@@ -9,9 +9,21 @@ edition = "2018"
 [dependencies]
 tokio = { version = "0.2.18", features = ["full"] }
 tokio-tungstenite = { version = "0.10", features = ["tls"] }
-futures-util = "0.3"
-url = "2.1"
-futures = "0.3"
+futures-util = { version = "0.3" }
+url = { version = "2.1" }
+futures = { version = "0.3" }
 serde_json = { version = "1.0" }
 serde = { version = "1.0", features = ["derive"] }
 crossterm = { version = "0.17", features = ["event-stream"] }
+clap = { version = "2.33" }
+log = { version = "0.4.8" }
+failure = { version = "0.1.6" }
+env_logger = { version = "0.7.1" }
+
+[lib]
+name = "lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "ticker"
+path = "src/bin/ticker.rs"
