@@ -3,6 +3,10 @@ name = "tiqer"
 version = "0.0.1"
 authors = ["Sendy Halim <sendyhalim93@gmail.com>"]
 edition = "2018"
+license-file = "license"
+description = """\
+  Rust CLI price ticker.
+"""
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

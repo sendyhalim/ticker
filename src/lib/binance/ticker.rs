@@ -67,6 +67,15 @@ where
         }
 
         let message = message.unwrap();
+
+        // We'll just ignore ping message.
+        // If I'm not mistaken the websocket library will automatically
+        // send pong frame back.
+        if message.is_ping() {
+          log::debug!("Receive ping {}", message);
+          return;
+        }
+
         let response_text = message.to_text();
 
         if response_text.is_err() {
